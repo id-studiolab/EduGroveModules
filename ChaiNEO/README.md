@@ -20,4 +20,4 @@ Included are alternative Gerber design files:
 
 ## Files and Documentation
 
-Schematic files and additional documentation are available in the [Production Files](Production Files/) subdirectory.
+Schematic files and additional documentation are available in the [Production Files](Production%20Files) subdirectory.
