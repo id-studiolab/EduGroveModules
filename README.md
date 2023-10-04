@@ -22,14 +22,14 @@ These designs are tailored for use in the [**Connected Interaction Kit**](https:
 
 ## Modules Overview
 
-* [**Custom Component Board**](CustomComponents/README.md)
+#### [**Custom Component Board**](CustomComponents/README.md)
 
 A versatile 2x3 cm PCB for easy assembly and interfacing of common sensors, demanding basic soldering skills. Useful for educational soldering practices.
 
-* [**ChaiNEO**](ChaiNEO/README.md)
+#### [**ChaiNEO**](ChaiNEO/README.md)
 
 Daisy-chainable, Grove-compatible boards designed for Neopixel-compatible LEDs.
 
-* [**Time-of-Flight Distance Sensor**](Time-of-Flight/README.md)
+#### [**Time-of-Flight Distance Sensor**](Time-of-Flight/README.md)
 
 Cost-effective, Grove-compatible boards for the VL53L0X sensor, enabling precise distance measurements up to 2 meters.
