@@ -1,10 +1,10 @@
 # ChaiNEO
 
-![ChaiNEO Preview](Assets/ChaiNEO-RGBW.png)
-
 Daisy-Chainable Breakout Boards for Neopixel Compatible LEDs
 
-ChaiNEO provides Grove-compatible breakout boards designed for Neopixel-compatible LEDs, using the SK6812RGBW chip ([Product Info](https://www.adafruit.com/product/2761)) instead of the P9813 chip found in original Grove Chainable LEDs.
+![ChaiNEO Preview](Assets/ChaiNEO-RGBW.png)
+
+ChaiNEO provides daisy-chainable, Grove-compatible breakout boards designed for Neopixel-compatible LEDs. The version pictured above uses the [SK6812RGBW chip](https://www.adafruit.com/product/2761) that supports RGBW color instead of the P9813 chip found in the Grove RGB Chainable LEDs.
 
 ## Design Features
 
@@ -20,4 +20,4 @@ Included are alternative Gerber design files:
 
 ## Files and Documentation
 
-Schematic files and additional documentation are available in the "Production Files" subdirectory.
+Schematic files and additional documentation are available in the [Production Files](Production Files/) subdirectory.
