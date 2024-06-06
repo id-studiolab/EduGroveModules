@@ -13,7 +13,7 @@ A collection of Grove-compatible modules, designed specifically for educational 
     <img src="ChaiNEO/Assets/ChaiNEO-RGBW.png" alt="ChaiNEO" style="flex: 1; width: 24%; max-width: 250px;"/>
   </a>
     <a href="MotorDriver/README.md">
-    <img src="MotorDriver/Assets/graphics/MotorDriver.png" alt="MotorDriver" style="flex: 1; width: 24%; max-width: 250px;"/>
+    <img src="MotorDriver/Assets/graphics/motor_board_front.png" alt="MotorDriver" style="flex: 1; width: 24%; max-width: 250px;"/>
   </a>
 </div>
 

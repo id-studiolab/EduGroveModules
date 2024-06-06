@@ -1,7 +1,7 @@
 # Motor Driver
-Simple I2C motor driver for servo,DC, and stepper motors.
+Simple I2C motor driver for Servo, DC, and Stepper motors.
 
-![MotorDriver Preview](Assets/graphics/MotorDriver.png)
+![MotorDriver Preview](Assets/graphics/motor_board_front.png)
 # Design Features
 This motor driver is the easiest way to connect anything moving to the ItsyBitsy Expander, it can drive up to 16 servos or 4 DC motors or even 2 stepper motors!
 
@@ -33,17 +33,14 @@ Schematic files and additional documentation are available in the Production Fil
 # Code examples
 
 ## CircuitPython Example LED
-
+This goes through all LEDs on the board and fades them in and out one by one.
 (from [adafruit](https://learn.adafruit.com/16-channel-pwm-servo-driver/python-circuitpython))
 
 ```python
 # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
-# Outputs a 50% duty cycle PWM single on the 0th channel.
-# Connect an LED and resistor in series to the pin
-# to visualize duty cycle changes and its impact on brightness.
-
+import time
 import board
 from adafruit_pca9685 import PCA9685
 
@@ -57,10 +54,29 @@ pca = PCA9685(i2c, address=0x60)
 # Set the PWM frequency to 60hz.
 pca.frequency = 60
 
-# Set the PWM duty cycle for channel zero to 50%. duty_cycle is 16 bits to match other PWM objects
-# but the PCA9685 will only actually give 12 bits of resolution.
-pca.channels[0].duty_cycle = 0x7FFF
+def fade_led_in(channel, steps=100, delay=0.0001):
+    for i in range(steps):
+        # Calculate the duty cycle value (0 to 0xFFFF)
+        duty_cycle = int(0xFFFF * (i / steps))
+        pca.channels[channel].duty_cycle = duty_cycle
+        time.sleep(delay)
 
+def fade_led_out(channel, steps=100, delay=0.0001):
+    for i in range(steps):
+        # Calculate the duty cycle value (0 to 0xFFFF)
+        duty_cycle = int(0xFFFF * ((steps - i) / steps))
+        pca.channels[channel].duty_cycle = duty_cycle
+        time.sleep(delay)
+    # Ensure the LED is fully off at the end
+    pca.channels[channel].duty_cycle = 0x0000
+
+# Light up each LED one by one with a fade effect and then turn them off
+while True:
+    for channel in range(16):
+        fade_led_in(channel)
+        time.sleep(0.1)  # Optional: wait half a second after fading in
+        fade_led_out(channel)
+        time.sleep(0.1)  # Optional: wait half a second after fading out
 ```
 
 ## CircuitPython Example Servo
@@ -86,7 +102,7 @@ time.sleep(1)
 ```
 
 ## CircuitPython Example  DC motor
-
+turn motor 1 full throttle forward
 (from [adafruit](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/python-circuitpython))
 
 ```python
@@ -99,14 +115,19 @@ import board
 from adafruit_motorkit import MotorKit
 
 kit = MotorKit(i2c=board.I2C())
-
-kit.motor1.throttle = 1.0
-time.sleep(0.5)
-kit.motor1.throttle = 0
+while True:
+    kit.motor1.throttle = 1.0
+    time.sleep(1)
+    kit.motor1.throttle = 0
+    time.sleep(1)
+    kit.motor1.throttle = -1.0
+    time.sleep(1)
+    kit.motor1.throttle = 0
+    time.sleep(1)
 ```
 
 ## CircuitPython Example Stepper motor
-
+turn 100 steps with a stepper motor
 (from [adafruit](https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/python-circuitpython))
 
 ```python
