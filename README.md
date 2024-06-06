@@ -4,16 +4,20 @@ A collection of Grove-compatible modules, designed specifically for educational 
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
   <a href="CustomComponents/README.md">
-    <img src="CustomComponents/Assets/CustomComp_Empty.png" alt="Custom Component Board" style="flex: 1; width: 24%; max-width: 250px;"/>
+    <img src="CustomComponents/Assets/CustomComp_Empty.png" alt="Custom Component Board" style="flex: 1; width: 32%; max-width: 250px;"/>
   </a>
   <a href="Time-of-Flight/README.md">
-    <img src="Time-of-Flight/V2_Integrated_Sensor/Assets/ToF_v2_VL53L0X.png" alt="Time-of-Flight Distance Sensor" style="flex: 1; width: 24%; max-width: 250px;"/>
+    <img src="Time-of-Flight/V2_Integrated_Sensor/Assets/ToF_v2_VL53L0X.png" alt="Time-of-Flight Distance Sensor" style="flex: 1; width: 32%; max-width: 250px;"/>
   </a>
   <a href="ChaiNEO/README.md">
-    <img src="ChaiNEO/Assets/ChaiNEO-RGBW.png" alt="ChaiNEO" style="flex: 1; width: 24%; max-width: 250px;"/>
+    <img src="ChaiNEO/Assets/ChaiNEO-RGBW.png" alt="ChaiNEO" style="flex: 1; width: 32%; max-width: 250px;"/>
   </a>
     <a href="MotorDriver/README.md">
-    <img src="MotorDriver/Assets/graphics/motor_board_front.png" alt="MotorDriver" style="flex: 1; width: 24%; max-width: 250px;"/>
+    <img src="MotorDriver/Assets/graphics/motor_board_front.png" alt="MotorDriver" style="flex: 1; width: 32%; max-width: 250px;"/>
+  </a>
+  </a>
+    <a href="HighPowerNEO/README.md">
+    <img src="HighPowerNeo/Assets/graphics/HighPowerNEO_front.png" alt="HighPowerNEO" style="flex: 1; width: 32%; max-width: 250px;"/>
   </a>
 </div>
 
