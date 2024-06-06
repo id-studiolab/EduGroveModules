@@ -17,7 +17,7 @@ A collection of Grove-compatible modules, designed specifically for educational 
   </a>
   </a>
     <a href="HighPowerNEO/README.md">
-    <img src="HighPowerNeo/Assets/graphics/HighPowerNEO_front.png" alt="HighPowerNEO" style="flex: 1; width: 32%; max-width: 250px;"/>
+    <img src="HighPowerNEO/Assets/graphics/HighPowerNEO_front.png" alt="HighPowerNEO" style="flex: 1; width: 32%; max-width: 250px;"/>
   </a>
 </div>
 
