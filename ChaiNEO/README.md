@@ -18,6 +18,11 @@ Included are alternative Gerber design files:
 - Another design with the same 2x3cm size.
 - A gem-shaped board with connectors on the front, making assembly easier if you have a pick and place machine.
 
+## Additional Resources and Instructions
+
+Further resources and usage instructions for the ChaiNEO board can be explored in detail [here](https://id-studiolab.github.io/Connected-Interaction-Kit/components/chainable-led/chainable-led-chaineo).
+
+
 ## Files and Documentation
 
 Schematic files and additional documentation are available in the [Production Files](Production%20Files) subdirectory.

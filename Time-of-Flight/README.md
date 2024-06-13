@@ -22,6 +22,7 @@ A slightly larger board that natively incorporates the VL53L0X sensor into its d
 - **Size**: 20 x 20 mm
 - **Mounting**: Two 2.75mm diameter mounting holes along the top edge
 
+
 ## Additional Resources and Instructions
 
 Further resources and usage instructions for the ToF sensor boards can be explored in detail [here](https://id-studiolab.github.io/Connected-Interaction-Kit/components/time-of-flight-distance-sensor/time-of-flight-distance-sensor.html).
