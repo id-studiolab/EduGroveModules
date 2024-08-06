@@ -19,6 +19,10 @@ A collection of Grove-compatible modules, designed specifically for educational 
     <a href="HighPowerNEO/README.md">
     <img src="HighPowerNEO/Assets/graphics/HighPowerNEO_front.png" alt="HighPowerNEO" style="flex: 1; width: 32%; max-width: 250px;"/>
   </a>
+  </a>
+    <a href="RadarSensor/README.md">
+    <img src="RadarSensor/Assets/graphics/radar_sensor_front.png" alt="RadarSensor" style="flex: 1; width: 32%; max-width: 250px;"/>
+  </a>
 </div>
 
 
@@ -41,6 +45,14 @@ Cost-effective, Grove-compatible boards for the VL53L0X sensor, enabling precise
 
 Daisy-chainable, Grove-compatible boards designed for Neopixel-compatible LEDs.
 
-### [**MotorDriver**](MotorDriver/README.md)
+### [**Motor Driver**](MotorDriver/README.md)
 
 Simple I2C motor driver for servo,DC, and stepper motors.
+
+### [**High power Neopixel**](HighPowerNEO/README.md)
+
+A 12W neopixel with extra white chip for accurate color reproduction.
+
+### [**Presence Sensor**](RadarSensor/README.md)
+
+An adapter board for the LD2410 or LD2450 to make it Grove compatible for the Itsy Bitsy.
