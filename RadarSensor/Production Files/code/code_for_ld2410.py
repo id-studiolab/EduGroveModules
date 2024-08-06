@@ -1,7 +1,7 @@
 import time
 import board
 import busio
-from ld2410_circuitpython import LD2410
+from ld2410 import LD2410
 
 # Initialize UART for communication with the LD2410 sensor
 uart = busio.UART(board.TX, board.RX, baudrate=256000)
