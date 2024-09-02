@@ -2,7 +2,7 @@
 A 12W neopixel with extra white chip for accurate color reproduction.
 It uses the UCS2904B chip to toggle the channels, can be programmed simiarly to the SK6812 chip
 
-![HPneopixel Preview](Assets/graphics/HighPowerNEO_front.png)
+![HPneopixel Preview](Assets/graphics/hpneo.jpg)
 # Design Features
 This 40x81mm PCB (aluminium PCB required for heat reduction) connects 3 high power RGBW leds in series. This makes it possible for you to power it by 12v and will get you a lot of light. it makes it possible to light up entire rooms!
 It uses standard 12v neopixel strip connectors to daisy chain them together.
