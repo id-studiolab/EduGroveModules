@@ -2,7 +2,7 @@
 
 Grove-Compatible Time-of-Flight Sensor Boards using the VL53L0X sensor
 
-![ToF Preview](V2_Integrated_Sensor/Assets/ToF_v2_VL53L0X.png)
+![ToF Preview](V2_Integrated_Sensor/Assets/distance_sensor.jpg)
 
 Two cost-effective, Grove-compatible board designs for the VL53L0X Time-of-Flight (ToF) sensor.
 
