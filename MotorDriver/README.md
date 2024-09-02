@@ -1,7 +1,7 @@
 # Motor Driver
 Simple I2C motor driver for Servo, DC, and Stepper motors.
 
-![MotorDriver Preview](Assets/graphics/motor_board_front.png)
+![MotorDriver Preview](Assets/graphics/motordriver.jpg)
 # Design Features
 This motor driver is the easiest way to connect anything moving to the ItsyBitsy Expander, it can drive up to 16 servos or 4 DC motors or even 2 stepper motors!
 
