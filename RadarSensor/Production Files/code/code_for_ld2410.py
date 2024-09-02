@@ -14,14 +14,6 @@ ld2410.read_firmware_version()
 
 # Wait for a moment
 time.sleep(1)
-# Factory Reset the Sensor
-#ld2410.factory_reset()
-# Wait for a moment
-time.sleep(1)
-# Restart the Sensor
-#ld2410.restart()
-
-
 
 def main():
     while True:
