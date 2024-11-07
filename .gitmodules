@@ -1,0 +1,3 @@
+[submodule "MotorDriver/code/libraries"]
+	path = MotorDriver/code/libraries
+	url = https://github.com/id-studiolab/Motor-Driver-Project-Bundle.git
