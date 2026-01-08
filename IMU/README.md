@@ -32,7 +32,7 @@ Jordan Boyle made a Circuit python fusion library for the sensor providing:
 -  Quaternion-based complementary filter for fusing accelerometer and gyroscope data.
 -  Euler angle outputs (roll, pitch, yaw) and angular rates on demand.
 
-It can be found [here](/fusionlibrary)
+It can be found [here](/IMU/fusionlibrary)
 
 ## Additional Resources and Instructions
 
