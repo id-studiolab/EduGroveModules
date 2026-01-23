@@ -19,7 +19,7 @@ import board
 from adafruit_lsm6ds.lsm6dsox import LSM6DSOX
 
 i2c = board.I2C()  # uses board.SCL and board.SDA
-sox = LSM6DSOX(i2c)
+sox = LSM6DSOX(i2c, address=0x6B)
 
 while True:
     print("Acceleration: X:%.2f, Y: %.2f, Z: %.2f m/s^2"%(sox.acceleration))
@@ -28,7 +28,7 @@ while True:
     time.sleep(0.5)
 ```
 ## Fusion Library
-Jordan Boyle made a Circuit python fusion library for the sensor providing:
+Jordan Boyle made a Circuitpython fusion library for the sensor providing:
 -  Quaternion-based complementary filter for fusing accelerometer and gyroscope data.
 -  Euler angle outputs (roll, pitch, yaw) and angular rates on demand.
 

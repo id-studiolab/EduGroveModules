@@ -114,7 +114,10 @@ import time
 import board
 from adafruit_motorkit import MotorKit
 
-kit = MotorKit(i2c=board.I2C())
+# Create the I2C bus interface.
+i2c = board.I2C()  # uses board.SCL and board.SDA
+
+kit = MotorKit(i2c, address=0x60)
 while True:
     kit.motor1.throttle = 1.0
     time.sleep(1)
@@ -139,7 +142,10 @@ import time
 import board
 from adafruit_motorkit import MotorKit
 
-kit = MotorKit(i2c=board.I2C())
+# Create the I2C bus interface.
+i2c = board.I2C()  # uses board.SCL and board.SDA
+
+kit = MotorKit(i2c, address=0x60)
 
 for i in range(100):
     kit.stepper1.onestep()
